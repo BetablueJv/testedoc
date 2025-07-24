@@ -1,0 +1,20 @@
+<html>
+<head>
+  <script>
+    fetch("https://hooks.zapier.com/hooks/catch/SEU_WEBHOOK_ID", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({
+        nome: "João Silva",
+        email: "joao@email.com",
+        hora: new Date().toISOString()
+      })
+    });
+  </script>
+</head>
+<body>
+  <h2>Olá, João!</h2>
+  <p>Seu documento está pronto para download:</p>
+  <a href="https://drive.google.com/seu-doc" target="_blank">Clique aqui para baixar</a>
+</body>
+</html>
